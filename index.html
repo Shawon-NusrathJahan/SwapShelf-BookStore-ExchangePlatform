@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- logo goes here -->
+            <a href="index.html" class="logo-link">
+                <img src="images/swapshelfsan.png" alt="Logo" class="logo-img">
+              </a>
+        </div>
+        <ul class="header-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="signup-login.html">Sign Up</a></li>
+            <!-- <li><a onclick="openpopup()">Sign Up</a></li> -->
+            <li><a href="#"><i class="fa-solid fa-address-book"></i></a></li>
+        </ul>
+
+    </header> 
+
+
+    <main>
+        <div class="banner">
+            <div class="banner-content">
+                <div id="text">
+                    <h1>SwapShelf</h1>
+                    <p>Welcome to the best Book Exchange Platform ever!</p>
+                </div>
+
+                <!-- <form class="banner-search"> action="/search" method="get" -->
+                    <!-- <input type="text" placeholder="Search by title, author, or genre..."> -->
+                    <!-- <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <!-- </form> -->
+            </div>  
+        </div>
+
+        <div class="section popular-books">
+            <h2>POPULAR BOOKS</h2>
+            <div class="books-container">
+                <a class="book-item" href="page-for-good-girls-guide.html">
+                    <img src="books covers/POPULAR! (1).jpg" alt="A Good Girl's Guide to Murder">
+                    <p>A Good Girl's Guide to Murder</p>
+                </a>
+                <a class="book-item" href="page-for-iiuc-admission-guide.html">
+                    <img src="books covers/POPULAR! (2).jpg" alt="IIUC Admission Guide">
+                    <p>IIUC Admission Guide</p>
+                </a>
+                <a class="book-item" href="page-for-the-boys.html">
+                    <img src="books covers/POPULAR! (3).jpg" alt="The Boys">
+                    <p>The Boys</p>
+                </a>
+                <a class="book-item" href="page-for-it-ends-with-us.html">
+                    <img src="books covers/POPULAR! (4).jpg" alt="It Ends With Us">
+                    <p>It Ends With Us</p>
+                </a>
+                <a class="book-item" href="page-for-mouse.html">
+                    <img src="books covers/POPULAR! (5).jpg" alt="Mouse">
+                    <p>Mouse</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section trending-books">
+            <h2>TRENDING BOOKS</h2>
+            <div class="books-container">
+                <a class="book-item" href="page-for-ami-major-dalim-bolchi.html">
+                    <img src="books covers/TRENDING (1).jpg" alt="Ami Major Dalim Bolchi">
+                    <p>Ami Major Dalim Bolchi</p>
+                </a>
+                <a class="book-item" href="page-for-attack-on-titan.html">
+                    <img src="books covers/TRENDING (2).jpg" alt="Attack On Titan">
+                    <p>Attack On Titan</p>
+                </a>
+                <a class="book-item" href="page-for-amar-fashi-chai.html">
+                    <img src="books covers/TRENDING (3).jpg" alt="Amar Fashi Chai">
+                    <p>Amar Fashi Chai</p>
+                </a>
+                <a class="book-item" href="page-for-f1-drive-to-survive.html">
+                    <img src="books covers/TRENDING (4).jpg" alt="F1: Drive to Survive">
+                    <p>F1: Drive to Survive</p>
+                </a>
+                <a class="book-item" href="page-for-love-next-door.html">
+                    <img src="books covers/TRENDING (5).jpg" alt="Love Next Door">
+                    <p>Love Next Door</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="container">
+            <h3 class="categories-title">CATEGORIES</h3>
+            <div id="slider-container">
+                <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                    <a href="category1.html" class="slide">
+                        <img src="categories/his.jpg" alt="his">
+                    </a>
+                    <a href="category2.html" class="slide">
+                        <img src="categories/comi.jpg" alt="comi">
+                    </a>
+                    <a href="category3.html" class="slide">
+                        <img src="categories/c m t.jpg" alt="c m t">
+                    </a>
+                    <a href="category4.html" class="slide">
+                        <img src="categories/s t m.jpg" alt="s t m">
+                    </a>
+                    <a href="category5.html" class="slide">
+                        <img src="categories/p m.jpg" alt="p m">
+                    </a>
+                    <a href="category6.html" class="slide">
+                        <img src="categories/y a.jpg" alt="y a">
+                    </a>
+                    <a href="category7.html" class="slide">
+                        <img src="categories/lit.jpg" alt="lit">
+                    </a>
+                    <a href="category8.html" class="slide">
+                        <img src="categories/islam.jpg" alt="islam">
+                    </a>
+                    <a href="category9.html" class="slide">
+                        <img src="categories/fic.jpg" alt="fic">
+                    </a>
+                </div>
+                <span onclick="slideLeft()" class="btn"></span>
+            </div>
+        </div>
+        <script src="carousel.js"></script> 
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/swapshelfsan.png" alt="Swapshelf.san" class="footer-logo">
+                <p>
+                    Join our vibrant community of book lovers and turn your old reads into new adventures. With a seamless exchange process and a trusted network. </p>
+                
+            </div>
+            <div class="footer-help">
+                <h4> Help</h4>
+                <br>
+                <ul>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="terms-&-conditions.html">Terms and Condition</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-refer">
+                <h4>Refer a Friend</h4>
+                <p>Help your friends to connect with books.</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <!--<h4>if want to add download part</h4>
+                <br>
+                <br> -->
+                <h4>We Accept</h4>
+                <div class="payment-icons">
+                    <img src="images/bkash.png" alt="bKash">
+                    <img src="images/nagad.png" alt="Nagad">
+                    <img src="images/applepay.png" alt="applePay">
+                    <img src="images/card.png" alt="Card">
+                </div>
+                
+            </div>
+        </div>
+    <!--theme-->
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="light">Light</button>
+            <button class="theme-btn" data-theme="dark">Dark</button>
+            <button class="theme-btn active" data-theme="auto">Auto</button>
+        </div>
+        <div class="footer-bottom">
+            <p><i>©Copyright 2024 <strong>SwapShelf House</strong>. All Rights Reserved.</i></p>
+            <p>Made  <span class="Swapshelf "></span> by Swapshelf team : )</p>
+        </div>
+    </footer>
+    
+    <script src="darkmode.js"></script> <!-- Include your script here -->
+   
+   
+    <!-- JavaScript code for behaviour -->
+
+    <!-- Pop-up signup/login -->
+    <!-- <script>
+        let popup=document.getElementById("s-popup")
+        function openpopup() {
+            popup.classList.add("open-popup")
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup"); 
+        }
+    </script> -->
+    
+      
+      
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapshelf.san</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup-login.css">
+    <link rel="stylesheet" href="browse.css">
+    <link rel="stylesheet" href="book-click.css">
+    <link rel="stylesheet" href="read-only-info-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- logo goes here -->
+            <a href="index.html" class="logo-link">
+                <img src="images/swapshelfsan.png" alt="Logo" class="logo-img">
+              </a>
+        </div>
+        <ul class="header-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="signup-login.html">Sign Up</a></li>
+            <!-- <li><a onclick="openpopup()">Sign Up</a></li> -->
+            <li><a href="#"><i class="fa-solid fa-address-book"></i></a></li>
+        </ul>
+    </header> 
+
+
+    <main>
+        
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for books...">
+    </div>
+
+    <div class="book-grid" id="bookGrid">
+        <!-- Book covers will be dynamically inserted here -->
+    </div>
+
+    
+
+    <script>
+        // Sample data (Replace this with database data if using backend)
+        const books = [
+            { title: 'Book One', cover: 'book1.jpg' },
+            { title: 'Book Two', cover: 'book2.jpg' },
+            { title: 'Book Three', cover: 'book3.jpg' },
+            { title: 'Book four', cover: 'book4.jpg' },
+            { title: 'Book five', cover: 'book5.jpg' },
+            { title: 'Book six', cover: 'book6.jpg' },
+            { title: 'Book seven', cover: 'book7.jpg' },
+            { title: 'Another Book', cover: 'book4.jpg' },
+            { title: 'Some Other Book', cover: 'book5.jpg' }
+        ];
+
+        // Function to display books
+        function displayBooks(bookArray) {
+            const bookGrid = document.getElementById('bookGrid');
+            bookGrid.innerHTML = '';
+            bookArray.forEach(book => {
+                const bookDiv = document.createElement('div');
+                bookDiv.classList.add('book');
+                bookDiv.innerHTML = `
+                    <img src="${book.cover}" alt="${book.title}">
+                    <p>${book.title}</p>
+                `;
+                bookGrid.appendChild(bookDiv);
+            });
+        }
+
+        // Initial display of all books
+        displayBooks(books);
+
+        // Search function
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const filteredBooks = books.filter(book => book.title.toLowerCase().includes(query));
+            displayBooks(filteredBooks);
+        });
+    </script>
+   <footer>
+<!--theme-->
+<div class="theme-switcher">
+    <button class="theme-btn" data-theme="light">Light</button>
+    <button class="theme-btn" data-theme="dark">Dark</button>
+    <button class="theme-btn active" data-theme="auto">Auto</button>
+</div>
+   </footer>
+   <script src="darkmode.js"></script> 
+   
+</body>
+</html>

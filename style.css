@@ -1,0 +1,473 @@
+/* General reset for margin and padding */
+* {
+    margin: 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+
+/* dark mode styling for home page */
+:root {
+    --base-color: #fff8f1;
+    --base-variant: rgba(222, 177, 183, 0.363);
+    --text-color: #111528;
+    --secondary-text: rgb(22, 19, 118);
+    --primary-color: #3a435d;
+    --swapshelf-color: #111528;
+    --footerhelptext-color:#554e4e;
+}
+body[data-theme="auto"] {
+    /* auto=default light*/
+    --base-color: #fff8f1;
+    --base-variant: rgba(222, 177, 183, 0.363);
+    --text-color: #111528;
+    --secondary-text: rgb(22, 19, 118);
+    --primary-color: #3a435d;
+    --swapshelf-color: #111528;
+    --footerhelptext-color:#554e4e;
+}
+body[data-theme="dark"] {
+    --base-color: #070b1d;
+    --base-variant: #14182b;
+    --text-color: #ffffff;
+    --secondary-text: #ffffff;
+    --primary-color: #3a435d;
+    --swapshelf-color: #111528;
+    --footerhelptext-color:#ffffff;
+}
+
+/* general styling */
+p {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+h1 {
+    font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+}
+h2,h3 {
+    font-size: 1.7vw;
+    font-family: 'Comic Neue', 'sans-serif';
+    margin-bottom: 20px;
+}
+
+html body {
+    height: 100%;            /* Ensure the body takes the full height of the viewport */
+    justify-content: center; /* Center horizontally */    
+   /* background-color: #fff8f1; */
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between; /* Space between logo and nav */
+    align-content: center;
+    padding: 20px 50px;
+}
+
+/* CSS for the clickable logo */
+.logo-link {
+    position: absolute;
+    top: 8.2px;
+    left: 60px;
+    text-decoration: none; /* Remove underline or any other styling */
+    transition: transform 0.3s ease;
+}
+.logo-link:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo link on hover */
+}
+.logo-img {
+    width: 150px;
+    height: 50px;
+    cursor: pointer; /* Show a pointer cursor to indicate it's clickable */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity on hover */
+}
+
+.logo-img:hover {
+    opacity: 0.8; /* Change opacity on hover */
+}
+
+.header-content {
+    list-style: none;             /* Remove bullet points from the list */
+    display: flex;               
+    gap: 20px; 
+}
+
+/* 
+@media (max-width: 768px) {
+    .logo {
+        width: 150px; 
+        height: 40px;
+    }
+
+    .header-content li a {
+        font-size: 14px; 
+    }
+}
+Reduce logo & font size of links on smaller screens */
+
+.header-content li a {
+    text-decoration: none;        /* Remove underline from links */
+    font-size: 16px;
+    /*color: rgb(22, 19, 118);*/
+    color:var(--secondary-text);
+    text-transform: uppercase;
+    white-space: nowrap;          /* Crucial */
+    padding: 0px 10px;     
+    cursor: pointer;        /* needed to include only for 'sign up' */
+    transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.header-content li a:hover {
+    color: #8f8fba;           
+}
+
+.header-content li a i {
+    font-size: 21px;     
+}
+
+
+
+/* MAIN */
+
+.banner {
+    background-color: rgb(255, 43, 255);
+    background-image: url("images/banner-bg cropped.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+    /* height: 50vh;  */
+}
+
+.banner-content {
+    padding: 80px 0px 0px 50px; /* T R B L */
+    color: var(--swapshelf-color);
+}
+
+#text h1 {
+    font-size: 7vw;
+}
+
+#text p {
+    padding-left: 7px;
+    font-size: 1.3vw;
+}
+
+.banner-search {
+    margin-top: 10vw;
+    margin-left: 5vh;
+    display: flex;
+    gap: 0;
+    height: 6vh;
+}
+
+.banner-search input, 
+.banner-search button {
+    padding: 10px;    
+    border: none; 
+    font-size: 17px;
+}
+
+.banner-search input {
+    width: 58vh;
+    border-radius: 13px 0 0 13px; /* TL  TR  BR  BL*/
+}
+
+.banner-search button {
+    background-color:rgba(98, 197, 194, 0.727);
+    width: 9vh;
+    font-size: 19px;
+    padding-right: 2vh;
+    border-radius: 0 13px 13px 0;
+    cursor: pointer;
+    /* transition: all 0.2s ease-in; */
+}
+.banner-search button:hover {
+    background-color: #0b8787;
+    color: aliceblue;
+}
+
+
+/* Popular & Trending Sections */
+
+.section {
+    margin: 50px 0;
+    padding: 0 30px;
+}
+.section h2 {
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+}
+.books-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto; overflow-y: hidden;
+    padding: 10px 0px; width: 100%;
+}
+.book-item {
+    flex: 0 0 150px;
+    text-align: center;
+    position: relative; 
+}
+.book-item img {
+    width: 150px;     
+    height: 225px;    
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Optional display: block;*/
+    transition: opacity 0.3s;
+}
+.book-item img:hover {
+    opacity: 0.5; 
+}
+.book-item p {
+    margin: 5px 0; /* Space between image and text */
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+/* CATEGORIES*/
+
+.categories-title {
+    text-align: center; /* Center the text */
+    color: #281c1c; /* Color for the heading */
+    margin-bottom: 0px; /* Space below the heading */
+    font-size: 50px; /* Adjust font size as needed */
+    border: 2px solid #c5e4e7; /* Border around the title */
+    padding: 10px; /* Padding inside the box */
+    border-radius: 10px; /* Optional: rounded corners */
+    display: inline-block; /* Makes the box only as wide as the text */
+    box-shadow: 0 0 20px 5px rgba(105, 204, 244, 0.7); /* Glowing effect */
+}
+carousel
+body{
+	margin: 0;
+	padding: 0;
+}
+#container {
+	height: 80vh;
+	display: grid;
+	place-items: center;
+    background-color: #c5e4e7;
+}
+#slider-container {
+	height: 290px;
+	width: 70vw;
+	max-width: 2000px;
+    position: relative;
+	overflow: hidden;
+	padding: 10px;
+}
+#slider-container .btn {
+	position: absolute;
+	top: calc(54% - 30px);
+	height: 20px;
+	width: 20px;
+	border-left: 8px solid #350e0ecb;
+	border-top: 8px solid #000000;
+	cursor: pointer;
+}
+#slider-container .btn:hover {
+	transform: scale(1.2);
+}
+#slider-container .btn.inactive {
+	border-left: 8px solid #350e0ecb;
+	border-top: 8px solid #350e0ecb;
+	
+}
+#slider-container .btn:first-of-type {
+	transform: rotate(-45deg);
+	left: 6.5px;
+}
+#slider-container .btn:last-of-type {
+	transform: rotate(135deg);
+	right: 6.3px;
+}
+#slider-container #slider {
+	display: flex;
+	width: 1000%;
+	height: 100%;
+	transition: all .4s;
+}
+#slider-container #slider .slide {
+	height: 90%;
+	margin: auto 10px;
+	background-color: #b5b5b5;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+	display: grid;
+	place-items: center;
+}
+#slider-container #slider .slide img {
+    width: 100%; 
+    height : auto;
+    object-fit: contain;
+    transition: opacity 0.3s; 
+}
+#slider-container #slider .slide:hover img {
+    opacity: 0.47; /* Change opacity on hover */
+}
+#slider-container #slider .slide span {
+	color: white;
+	font-size: 60px;
+}
+@media only screen and (min-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(2.5% - 20px);
+	}
+}
+@media only screen and (max-width: 1100px) {
+	#slider-container #slider .slide {
+		width: calc(3.3333333% - 20px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	#slider-container #slider .slide {
+		width: calc(5% - 20px);
+	}
+}
+@media only screen and (max-width: 550px) {
+	#slider-container #slider .slide {
+		width: calc(10% - 20px);
+	}
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--base-variant);
+    padding: 40px 0;
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,.footer-help, .footer-refer, .footer-right {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 20px;
+}
+
+.footer-logo {
+    max-width: 185px;
+    margin-bottom: 10px;
+}
+
+/*.social-icons {   touch krle new page hbe na
+    display: flex; 
+    gap: 15px;  
+    margin-left: 20px; 
+}
+*/
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+.social-icons a:hover {
+    color: #df23b3;
+}
+
+.fa-facebook {
+    color: #3331b7ec; 
+}
+.fa-x-twitter {
+    color: #000000fd; 
+}
+.fa-instagram{
+    background: linear-gradient(45deg, #833ab4, #E1306C, #fd1d1d, #f77737);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+.footer-help ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-help li {
+    margin-bottom: 10px;
+}
+
+.footer-help li a {
+    text-decoration: none;
+    color : rgb(83, 82, 82);
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-help li a:hover {
+    color: rgb(169, 140, 172); /* Set the hover color */
+}
+
+.footer-right .app-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-right .app-buttons img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-right .payment-icons img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #c9b00d;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgb(50, 7, 7);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #f4f4f4;
+    /* z-index: 1000; */
+}
+
+.theme-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+}
+
+.theme-btn.active {
+    background-color: palevioletred;
+    color: black;
+    border-radius: 20px;
+}
+

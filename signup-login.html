@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapshelf.san</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="entry-outer-container">
+        <div class="entry-forms-container">
+            <div class="entry-forms">
+                <form action="" class="login-form">
+                    <h2 class="title">Login</h2>
+                    <!-- multiple divs needed to avoid span condiiton -->
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <input type="submit" value="Login" class="entry-btn">
+                    <p class="social-text">Or Login with social platform</p>
+                    <div class="form-social-media">
+                        <a href="#" class="form-s-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a href="" id="sign-up-btn2">Signup</a></p>
+                </form>
+
+                <form action="" class="signup-form">
+                    <h2 class="title">Create Account</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    
+                    <input type="submit" value="Signup" class="entry-btn">
+                    <p class="social-text">Or Sign up with social platform</p>
+                    <div class="form-social-media">
+                        <a href="#" class="form-s-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="form-s-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="account-text">Already have an account? <a href="" id="log-in-btn2">Login</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Member of Community?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum nobis, tenetur qui vitae soluta veritatis placeat accusantium, nemo a, quaerat nostrum ut sapiente amet culpa? Adipisci voluptas harum quia.</p>
+                        <button class="entry-btn" id="log-in-btn">Let in</button>
+                    </div>
+                    <img src="images/img-login.svg" alt="" class="entry-img">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>New to Community?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum nobis, tenetur qui vitae soluta veritatis placeat accusantium, nemo a, quaerat nostrum ut sapiente amet culpa? Adipisci voluptas harum quia.</p>
+                        <button class="entry-btn" id="sign-up-btn">Sign me up</button>
+                    </div>
+                    <img src="images/img-signup.svg" alt="" class="entry-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme-switcher">
+        <button class="theme-btn" data-theme="light">Light</button>
+        <button class="theme-btn" data-theme="dark">Dark</button>
+        <button class="theme-btn active" data-theme="auto">Auto</button>
+    </div>
+    <script src="signup-login.js"></script>
+    <script src="darkmode.js"></script> 
+</body>
+</html>

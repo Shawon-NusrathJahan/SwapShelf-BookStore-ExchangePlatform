@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapshelf.san</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup-login.css">
+    <link rel="stylesheet" href="read-only-info-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- logo goes here -->
+            <a href="index.html" class="logo-link">
+                <img src="images/swapshelfsan.png" alt="Logo" class="logo-img">
+              </a>
+        </div>
+        <ul class="header-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="signup-login.html">Sign Up</a></li>
+            <!-- <li><a onclick="openpopup()">Sign Up</a></li> -->
+            <li><a href="#"><i class="fa-solid fa-address-book"></i></a></li>
+        </ul>
+    </header> 
+
+    <script>
+        let popup=document.getElementById("s-popup")
+        function openpopup() {
+            popup.classList.add("open-popup")
+        }
+    </script>
+
+    <main>
+        <section class="about-us-section read-only-section">
+            <h1>Welcome to SwapShelf.san!</h1>
+            <p>
+                At SwapShelf, we bring together a vibrant community of book lovers eager to share, discover, and exchange books. Our platform is built on the belief that books are more than just pages—they are gateways to knowledge, imagination, and new perspectives. Whether you’re looking to give away books you’ve finished or discover new reads, SwapShelf makes it easy to connect with others who share your passion for literature.
+            </p>
+
+            <h2>How It Works:</h2>
+            <ul class="highlighted-points">
+                <li><strong>List your Books</strong> <br> Got books that you’ve already read and want to share? Simply list them on SwapShelf, and let other members discover your collection.</li>
+                <li><strong>Explore New Reads</strong> <br> Browse books shared by others in the community and discover new gems. Find your next great read through our user-friendly interface.</li>
+                <li><strong>Easy Book Swaps</strong> <br> Arrange a swap with fellow readers in just a few clicks. Connecting with other book lovers has never been this simple.</li>
+            </ul>
+
+            <h2>Our Mission:</h2>
+            <p>At SwapShelf, we are committed to promoting sustainability through the recycling and reuse of books. Our mission is to foster meaningful connections among readers while minimizing waste. By encouraging book swaps, we aim to reduce the environmental impact of mass book production while enriching our community with shared literary experiences.</p>
+
+            <h2>Why Choose SwapShelf?</h2>
+            <ul class="highlighted-points">
+                <li><strong>Convenient</strong> <br> Easily list and exchange books from the comfort of your home. Seamless doorstep delivery and pickup.</li>
+                <li><strong>Affordable</strong> <br> Exchange books with no extra cost beyond delivery. Save money and enjoy a rotating selection of new reads.</li>
+                <li><strong>Community</strong> <br> Build connections with fellow book lovers. Share your favourite reads and discover new ones form your community.</li>
+            </ul>
+            
+            <h2>Safety First:</h2>
+            <p>Your safety is our top priority.</p>
+            <ul class="styled-bullets">
+                <li>Disinfected book handling and packaging</li>
+                <li>Safe, contactless delivery and collection</li>
+                <li>48-hour quarantine before circulation</li>
+            </ul>
+
+            <h2>Quality is our priority:</h2>
+            <p><strong>Books are curated and delivered with care</strong></p>
+            <p>With focus on providing high-quality books and ensuring a seamless experience with every exchange.</p>
+            <ul class="styled-bullets">
+                <li>Handpicked Selection: Each book is reviewed to ensure it's in great condition</li>
+                <li>Personalised Recommendations: Get tailored suggestions based on your reading history.</li>
+                <li>Quick Delivery: Books are delivered promptly to keep your reading journey uninterrepted.</li>
+            </ul>
+
+            <h2>Join Us Today!</h2>
+            <p>By joining SwapShelf, you're not only gaining access to a vast array of books but also helping build a world where books bring people together. Join our community today and take part in a movement that celebrates literature, sustainability, and connection!</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/swapshelfsan.png" alt="Swapshelf.san" class="footer-logo">
+                <p>
+                    Join our vibrant community of book lovers and turn your old reads into new adventures. With a seamless exchange process and a trusted network. </p>
+                
+            </div>
+            <div class="footer-help">
+                <h4> Help</h4>
+                <br>
+                <ul>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="terms-&-conditions.html">Terms and Condition</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-refer">
+                <h4>Refer a Friend</h4>
+                <p>Help your friends to connect with books.</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <!--<h4>if want to add download part</h4>
+                <br>
+                <br> -->
+                <h4>We Accept</h4>
+                <div class="payment-icons">
+                    <img src="images/bkash.png" alt="bKash">
+                    <img src="images/nagad.png" alt="Nagad">
+                    <img src="images/applepay.png" alt="applePay">
+                    <img src="images/card.png" alt="Card">
+                </div>
+                
+            </div>
+        </div>
+    <!--theme-->
+        <div class="theme-switcher">
+            <button class="theme-btn" data-theme="light">Light</button>
+            <button class="theme-btn" data-theme="dark">Dark</button>
+            <button class="theme-btn active" data-theme="auto">Auto</button>
+        </div>
+        <div class="footer-bottom">
+            <p><i>©Copyright 2024 <strong>SwapShelf House</strong>. All Rights Reserved.</i></p>
+            <p>Made  <span class="Swapshelf "></span> by Swapshelf team : )</p>
+        </div>
+    </footer>
+    <script src="darkmode.js"></script> <!-- Include your script here -->
+   
+</body>
+</html>

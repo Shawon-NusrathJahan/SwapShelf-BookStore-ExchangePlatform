@@ -1,0 +1,184 @@
+/* General Styling */
+* {
+    margin: 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+:root{
+    --bokexchange-colour:#fdd5e5;
+    --exchangepro-colour: #fffac2;
+}
+body[data-theme="auto"] {
+    /* auto=default light*/
+    --bokexchange-colour:#fdd5e5;
+    --exchangepro-colour: #fffac2;
+}
+body[data-theme="dark"] {
+    --bokexchange-colour:#14182b;
+    --exchangepro-colour:#14182b;
+}
+.container {
+    background-color: rgba(185, 234, 235, 0.352);
+    max-width: 1000px;
+    padding: 20px 40px;
+    margin: auto;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* User Info at the Top */
+.user-info-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-icon-top {
+    width: 50px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.user-id-top {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* User and Book Info */
+.user-book-section {
+    text-align: center;
+}
+
+.book-section {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.book-image img {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.book-info {
+    text-align: left;
+}
+
+.book-info p {
+    margin: 5px 0;
+}
+
+.book-info textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #53cdb2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-info button:hover {
+    background-color: #2e989e;
+}
+
+/* Books in Exchange */
+.exchange-books {
+    background-color:var(--bokexchange-colour);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-books h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.exchange-books ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.exchange-books li {
+    padding: 13px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* clr Line */
+.clr-line {
+    border: 0;
+    height: 4px;
+    background: #daba43;
+    margin: 30px 0;
+}
+
+/* Exchange Procedure */
+.exchange-procedure {
+    background-color:var(--exchangepro-colour);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-procedure h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.exchange-procedure label {
+    display: block;
+    margin-top: 10px;
+}
+
+.exchange-procedure input,
+.exchange-procedure textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.exchange-procedure input[type="email"],
+.exchange-procedure input[type="tel"] {
+    height: 40px;
+}
+.exchange-procedure button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #65cebe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exchange-procedure button:hover {
+    background-color: #45a09b;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
